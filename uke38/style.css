@@ -1,0 +1,56 @@
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  text-align: center;
+}
+
+main>article{
+  background-color: #9933ff;
+  margin: auto;
+  width: 400px;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+}
+
+body{
+  background-color: black;
+  font-family: verdana;
+  background-image: url(bilder/univers2.jpg);
+}
+header{
+  margin: auto;
+  color: #cc0000;
+  text-align: center;
+  padding: 15px;
+
+}
+header>a{
+  text-decoration: none;
+  padding: 15px;
+  margin: auto;
+  background-color: #ff66ff;
+  border-radius: 20px;
+  border-style: solid;
+
+
+}
+img{
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-color: lightgray;
+  display: block;
+  margin: auto;
+  border-top: auto;
+  border-bottom: auto;
+  border-radius: 5px;
+}
+h1{
+  background-color: #9933ff;
+  width: 700px;
+  font-size: 80px;
+  margin: auto;
+}

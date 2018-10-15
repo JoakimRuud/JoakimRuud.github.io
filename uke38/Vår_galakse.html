@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vår galkse</title>
+    <style media="screen">
+    body{
+      background-color: black;
+      font-family: verdana;
+      background-image: url(bilder/univers5.jpg);
+    }
+    header{
+      margin: auto;
+      color: #cc0000;
+      text-align: center;
+      padding: 15px;
+
+    }
+    header>a{
+      text-decoration: none;
+      padding: 15px;
+      margin: auto;
+      background-color: #ff66ff;
+      border-radius: 20px;
+      border-style: solid;
+
+
+    }
+    img{
+      width: 500px;
+      border-radius: 10px;
+      display: block;
+      margin: auto;
+     }
+
+    h1{
+      background-color: #9933ff;
+      width: 700px;
+      margin: auto;
+      font-size: 100px;
+      text-align: center;
+    }
+    main>p{
+      text-align: center;
+      width: 500px;
+      margin: auto;
+      color: lightgrey;
+    }
+    .wrapper{
+      width: 500px;
+      height: 500px;
+      border:solid 2px black;
+      overflow: hidden;
+      margin: 100px auto 0px auto;
+    }
+    .frame{
+      width:100%;
+      height:100%;
+      background-image: url(bilder/melkeveien.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    .frame:hover{
+      animation: zoomeffect 3s infinite;
+    }
+
+    @keyframes zoomeffect{
+      0%{
+        background-position: center;
+        transform:scale(2,2);
+    }
+    50%{
+      transform:scale(3,3);
+    }
+    100%{
+      transform:scale(5,5);
+  }
+ }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Melkeveien</h1>
+      <br>
+      <br>
+      <a href="planeter.html">Hjem</a>
+      <a href="sola.html">Sola</a>
+      <a href="Vår_galakse">Vår galakse</a>
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <div class="frame">
+        </div>
+      </div>
+    </main>
+
+
+
+  </body>
+</html>
