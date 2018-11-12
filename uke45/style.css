@@ -1,0 +1,60 @@
+body{
+  margin: 0;
+  background-color: #b3b3b3
+}
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr;
+  background-color: #a5a5a5;
+  grid-gap: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align:center;
+}
+  header>.lenke{
+    align-self: center;
+    align: center;
+    border-right: 5px;
+    border-color: black;
+  }
+  header>.lenke>a{
+    color: #e7cf21;
+    text-decoration: none;
+    border-right: 5px;
+    border-color: black;
+
+  }
+  header>.lenke>a:hover{
+    color: #33334d;
+  }
+  #logo>a>img{
+    display: block;
+    margin: 1px;
+    width: 150px;
+  }
+section{
+  background-color: ;
+}
+#index{
+  background-image: url(bilder/tennisbilde.png);
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+main>h1{
+  text-align: center;
+  font-style: bold;
+  color: #e7cf21;
+  margin-top: 800px;
+}
+main>a{
+  text-decoration: none;
+  color; black;
+  font-style: bold;
+}
