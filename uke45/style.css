@@ -1,8 +1,9 @@
-body{
+body {
   margin: 0;
   background-color: #b3b3b3;
 }
-header{
+
+header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -13,36 +14,43 @@ header{
   grid-gap: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
-  text-align:center;
+  text-align: center;
 }
-header>.lenke{
-    align-self: center;
-    align: center;
-    border-right: 5px;
-    border-color: black;
-  }
-header>.lenke>a{
-    color: #e7cf21;
-    text-decoration: none;
-    border-right: 5px;
-    border-color: black;
-  }
-header>.lenke>a:hover{
-    color: #33334d;
-  }
-#over>.info:hover{
+
+header>.lenke {
+  align-self: center;
+  align: center;
+  border-right: 5px;
+  border-color: black;
+}
+
+header>.lenke>a {
+  color: #e7cf21;
+  text-decoration: none;
+  border-right: 5px;
+  border-color: black;
+}
+
+header>.lenke>a:hover {
+  color: #33334d;
+}
+
+#over>.info:hover {
   text-decoration: underline;
   color: blue;
 }
-#logo>a>img{
-    display: block;
-    margin: 1px;
-    width: 150px;
-  }
-section{
+
+#logo>a>img {
+  display: block;
+  margin: 1px;
+  width: 150px;
+}
+
+section {
   background-color: ;
 }
-#over{
+
+#over {
   background-image: url(/Users/jo/Desktop/GitHub/RuudHub/uke45/bilder/tennis-background-hd-1280x800-19160.jpg);
   height: 900px;
   background-position: center;
@@ -50,10 +58,12 @@ section{
   background-size: cover;
   text-align: center;
 }
-#under{
+
+#under {
   margin-top: 80px;
 }
-#over>h1{
+
+#over>h1 {
   text-align: center;
   font-style: bold;
   font-size: 40px;
@@ -63,20 +73,22 @@ section{
   margin-right: 300px;
   border-bottom-style: double;
   border-color: black;
-
 }
-#over>h2{
+
+#over>h2 {
   margin-top: 400px;
   font-size: 50px;
 }
-.info{
+
+.info {
   text-decoration: none;
   color: black;
   font-style: bold;
   font-size: 20px;
   width: 20px;
 }
-#nyhet{
+
+#nyhet {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 5px;
@@ -85,7 +97,8 @@ section{
   border-bottom-style: dotted;
   border-color: black;
 }
-.nyheter{
+
+.nyheter {
   border-style: solid;
   border-radius: 5px;
   border-color: black;
@@ -93,14 +106,17 @@ section{
   width: 400px;
   height: 500px;
 }
-.nyheter>img{
+
+.nyheter>img {
   height: 400px;
   padding: 0;
 }
-#bak{
+
+#bak {
   background-color: #f2f2f2
 }
-#undersiden{
+
+#undersiden {
   display: grid;
   grid-template-columns: 1fr;
   margin-left: 100px;
@@ -108,46 +124,42 @@ section{
   margin-top: 50px;
   padding-top: 20px;
 }
-.under>a{
+
+.under>a {
   text-decoration: none;
 }
-.under>a>img{
+
+.under>a>img {
   width: auto;
   height: 600px;
 }
-.under>a>h1{
+
+.under>a>h1 {
   color: black;
   text-align: left;
 }
 
-
-TENNIS RACKERT UNDERSIDEN
-
-
-#background{
+TENNIS RACKERT UNDERSIDEN #background {
   background-color: #f2f2f2
 }
-#hei{
+
+#hei {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
   margin-left: 50px;
   margin-right: 50px;
   background-color: yellow;
-  grid-auto-rows: minmax(50px,300px);
+  grid-auto-rows: minmax(50px, 300px);
 }
-#hei>a>img{
+
+#hei>a>img {
   width: 300px;
 }
-#hei>div{
 
-}
+#hei>div {}
 
-
-babolat UNDERSIDEN
-
-
-#kjøp{
+babolat UNDERSIDEN #kjøp {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
