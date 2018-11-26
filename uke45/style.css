@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: #b3b3b3;
+  font-family: courier;
 }
 
 header {
@@ -33,6 +34,7 @@ header>.lenke>a {
 
 header>.lenke>a:hover {
   color: #33334d;
+  text-decoration: underline:
 }
 
 #over>.info:hover {
@@ -52,7 +54,7 @@ section {
 
 #over {
   background-image: url(/Users/jo/Desktop/GitHub/RuudHub/uke45/bilder/tennis-background-hd-1280x800-19160.jpg);
-  height: 900px;
+  height: 867px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -60,7 +62,7 @@ section {
 }
 
 #under {
-  margin-top: 80px;
+  margin-top: 200px;
 }
 
 #over>h1 {
@@ -76,8 +78,12 @@ section {
 }
 
 #over>h2 {
-  margin-top: 400px;
+  margin-top: 360px;
   font-size: 50px;
+}
+#ks{
+  font-size: 20px;
+  padding-bottom: 0;
 }
 
 .info {
@@ -94,7 +100,6 @@ section {
   grid-gap: 5px;
   margin-left: 50px;
   margin-right: auto;
-  border-bottom-style: dotted;
   border-color: black;
 }
 
@@ -105,9 +110,11 @@ section {
   border-width: 2px;
   width: 400px;
   height: 500px;
+  background-color: white;
 }
 
 .nyheter>img {
+  width: 400px;
   height: 400px;
   padding: 0;
 }
@@ -118,11 +125,12 @@ section {
 
 #undersiden {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 50px;
   padding-top: 20px;
+  grid-column-gap: 20px;
 }
 
 .under>a {
@@ -131,36 +139,105 @@ section {
 
 .under>a>img {
   width: auto;
-  height: 600px;
+  height: 300px;
 }
 
 .under>a>h1 {
   color: black;
-  text-align: left;
+  text-align: center;
 }
 
-TENNIS RACKERT UNDERSIDEN #background {
-  background-color: #f2f2f2
+TENNIS RACKERT UNDERSIDEN
+#background{
+    background-color: blue;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+#top{
+  margin-top: 80px;
 }
 
 #hei {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-  background-color: yellow;
-  grid-auto-rows: minmax(50px, 300px);
+  grid-gap: 30px;
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color: #262626;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-top: 5px;
 }
 
-#hei>a>img {
-  width: 300px;
+#hei>.bilde>a>img {
+  width: 450px;
 }
 
-#hei>div {}
+#hei>div {
+}
 
-babolat UNDERSIDEN #kjøp {
+babolat UNDERSIDEN
+#kjøp {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
+}
+.ro{
+  margin-top: 100px;
+  text-align: center;
+}
+.ck{
+  text-align:center;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+.nj{
+  padding-left: 20px;
+}
+#kd{
+  width: 50px;
+  margin-left: 150px;
+}
+footer{
+  padding-left: 20px;
+}
+.under2>a {
+  text-decoration: none;
+}
+
+.under2>a>img {
+  width: auto;
+  height: 300px;
+}
+
+.under2>a>h1 {
+  color: black;
+  text-align: center;
+}
+#under2 {
+  margin-top: 0px;
+}
+#nyhet2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  margin-left: 50px;
+  margin-right: auto;
+  border-color: black;
+}
+
+.nyheter2 {
+  border-style: solid;
+  border-radius: 5px;
+  border-color: black;
+  border-width: 2px;
+  width: 400px;
+  height: 500px;
+  background-color: white;
+}
+
+.nyheter2>img {
+  width: 400px;
+  height: 400px;
+  padding: 0;
 }
