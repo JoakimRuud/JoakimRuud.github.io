@@ -1,0 +1,73 @@
+h1{
+  text-align: center;
+}
+body{
+  background-image: url(maxresdefault.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 821px;
+}
+@media(max-width:800px){
+  body{
+    background-image: url(84287177.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 421px;
+  }
+}
+section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin: auto;
+}
+.matretter{
+  text-align: center;
+}
+.matretter>img{
+  width: 300px;
+  height: 200px;
+}
+@media(max-width:1200px){
+  section{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media(max-width:900px){
+  section{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(max-width:700px){
+  section{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* navigasjonsbar */
+
+header>nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+}
+nav>a{
+  text-decoration: none;
+  color: black;
+}
+header>nav>a:hover{
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+@media(max-width:700px){
+  header>nav{
+    flex-direction: column;
+  }
+}
+
+/* navigasjonsbar slutt */

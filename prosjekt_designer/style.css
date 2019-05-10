@@ -1,0 +1,557 @@
+body {
+  background-color: #313131;
+  color: white;
+  font-family: monospace;
+  margin: 0;
+}
+
+/* navigasjonsbar */
+#logo_bilde {
+  display: block;
+  margin-left: 70%;
+  width: 300px;
+}
+
+.navBar {
+  overflow: visible;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+}
+
+.navBar div a {
+  float: left;
+  display: block;
+  color: #14adfd;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 40px;
+  text-decoration: none;
+}
+
+.navbar>a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+/* navigasjonsbar slutt */
+/* dropned knapp i navbar */
+.dropned1 {
+  float: left;
+  overflow: hidden;
+}
+
+.dropned1 .dropknapp1 {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  margin: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.dropned-content1 {
+  display: none;
+  position: absolute;
+  background-color: #313131;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropned-content1 a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropned-content1 a:hover {
+  text-decoration: underline;
+  color: grey;
+  transition: all ease-in-out 350ms;
+}
+
+.dropned1:hover .dropned-content1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropknapp1>a {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* dropnedknapp navbar slutt */
+/* start på frontpage */
+#frontpage_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3px;
+}
+
+.frontpage {
+  position: relative;
+}
+
+.forsideTextDiv {
+  position: absolute;
+  left: 70%;
+  bottom: 15%;
+}
+
+.forsideTextDiv p {
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+  padding: 0;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.forsideTextDiv1 {
+  position: absolute;
+  left: 10%;
+  bottom: 30%;
+  font-size: 40px;
+}
+
+.forsideTextDiv1 p {
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.forsideTextDiv1>a {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.frontpage>a>#forsidebilde {
+  width: 100%;
+}
+
+.frontpage #ReleaseText1 {
+  position: absolute;
+  left: 3%;
+  top: 0%;
+  font-size: 50px;
+  color: white;
+}
+
+.frontpage a #ReleaseText2 {
+  position: absolute;
+  left: 3%;
+  top: 11%;
+  font-size: 20px;
+  color: white;
+}
+
+#frontpageProdukt {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 90px;
+}
+
+/* frontpage slutt */
+/* produkt css start */
+#produktBilde {
+  display: block;
+  width: 100%;
+}
+
+.frontpage #skoBilde {
+  width: 100%;
+}
+
+.span2 {
+  grid-column: span 2;
+}
+
+.produktTekst {
+  text-decoration: none;
+  color: white;
+  margin: 2px;
+  font-size: 20px;
+}
+
+#produktBilde {
+  display: block;
+  width: 100%;
+}
+
+.produktTekst2 {
+  text-decoration: none;
+  color: white;
+  margin: 2px;
+  font-size: 20px;
+}
+
+.produktSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  grid-row-gap: 50px;
+}
+
+.produktTekst1 {
+  text-decoration: none;
+  color: white;
+  margin: 2px;
+  font-size: 15px;
+}
+
+/* produkt css slutt */
+/* dropned knapp til sortering start */
+.dropdownList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #313131;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropbtn:hover {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content button {
+  color: black;
+  padding: 12px 16px;
+  font-size: 20px;
+  background-color: #f9f9f9;
+  display: block;
+  text-decoration: none;
+  border-style: solid;
+  border: 5px;
+}
+
+.dropdown-content button:hover {
+  background-color: red;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* dropned knapp til sortering Slutt */
+/* css for produktInfo */
+.mainStil {}
+
+.produktInfoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 3px;
+}
+
+.produktInfoGrid div img {
+  display: block;
+  width: 100%;
+}
+
+.produktInfoGridInner {
+  margin-left: 50px;
+}
+
+.produktInfoGridInner>.produktMerke {
+  font-size: 20px;
+}
+
+.produktInfoGridInner>.produktVare {
+  font-size: 70px;
+  margin: 10px;
+}
+
+.produktInfoGridInner>.produktPris {
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.produktHandlekurv {
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+  border-style: none;
+}
+
+.produktInfoGridInner>.produktFarge {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.produktBildeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.produktBildeDiv img {
+  display: block;
+  width: 100%;
+}
+
+/* css for produktInfo Slutt */
+#merkeInfoDiv {
+  margin-top: 100px;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 100px;
+}
+
+.merkeInfoTekst {
+  font-size: 30px;
+}
+
+.undernettsideOverskrift {
+  font-size: 50px;
+  margin: 0;
+  margin-left: 50px;
+}
+
+.undernettsideLink {
+  color: white;
+  font-size: 20px;
+  text-decoration: underline;
+  margin-left: 50px;
+}
+
+/* handlekurv */
+#secHandlekurv {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 700px;
+  margin: auto;
+}
+
+#secHandlekurvTekst {
+  max-width: 700px;
+  margin: auto;
+  font-size: 30px;
+}
+
+.divHandlekurv {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-style: solid;
+}
+
+#secHandlekurv>a {
+  color: white;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.divHandlekurv>div {
+  border-style: solid;
+  border-color: white;
+  padding: 20px;
+  font-size: 30px;
+}
+
+/* handlekurv Slutt */
+/* css for footer */
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr
+}
+
+.footerDiv1 {
+  font-size: 20px;
+}
+
+#logo_bilde2 {
+  width: 300px;
+}
+
+#facebook {
+  width: 50px;
+}
+
+#instagram {
+  width: 50px;
+}
+
+#twitter {
+  width: 50px;
+}
+
+.secMedia {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  margin-left: 50px;
+}
+
+.footerDiv2 {
+  font-size: 20px;
+}
+
+/* css for footer slutt */
+/* css for mobilvenlig nettside */
+@media(max-width:600px) {
+  .navBar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+  }
+
+  .navBar div a {
+    color: darkblue;
+  }
+
+  .navBar>div {
+    margin: auto;
+  }
+
+  #logo_bilde {
+    display: none;
+  }
+
+  header {
+    background-image: url("bilder/LogBackground2.jpg");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .forsideTextDiv p {
+    font-size: 15px;
+  }
+
+  .forsideTextDiv1 p {
+    font-size: 15px;
+  }
+
+  .forsideTextDiv1 a {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .frontpage #ReleaseText1 {
+    font-size: 15px;
+  }
+
+  .frontpage a #ReleaseText2 {
+    font-size: 10px;
+  }
+
+  #frontpageProdukt {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 25px;
+  }
+
+  .produktTekst {
+    font-size: 8px;
+  }
+
+  .produktSection {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+  }
+
+  li a, .dropbtn {
+    font-size: 10px;
+  }
+
+  .dropdown-content button {
+    font-size: 8px;
+  }
+
+  .produktInfoGridInner {
+    margin-left: 20px;
+  }
+
+  .produktInfoGridInner>.produktMerke {
+    font-size: 10px;
+  }
+
+  .produktInfoGridInner>.produktVare {
+    font-size: 25px;
+    margin: 5px;
+  }
+
+  .produktInfoGridInner>.produktPris {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .produktHandlekurv {
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .produktInfoGridInner>.produktFarge {
+    font-size: 10px;
+  }
+
+  #merkeInfoDiv {
+    display: none;
+  }
+
+  .undernettsideOverskrift {
+    font-size: 30px;
+    margin-left: 30px;
+  }
+
+  .undernettsideLink {
+    display: none;
+  }
+
+  #secHandlekurv {
+    max-width: 400px;
+  }
+
+  #secHandlekurvTekst {
+    max-width: 400px;
+    font-size: 20px;
+  }
+
+  .divHandlekurv>div {
+    font-size: 10px;
+  }
+
+  #secHandlekurv>a {
+    font-size: 10px;
+  }
+}
+
+/* css for mubilvenlig nettside slutt */

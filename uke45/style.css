@@ -212,17 +212,16 @@ TENNIS RACKERT UNDERSIDEN
 #hei>.bilde>a>img {
   width: 450px;
 }
-
-#hei>div {
-}
-
-babolat UNDERSIDEN
 #kjøp {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
 }
 .ro{
+  margin-top: 100px;
+  text-align: center;
+}
+#ro{
   margin-top: 100px;
   text-align: center;
 }
@@ -240,6 +239,7 @@ babolat UNDERSIDEN
 }
 footer{
   padding-left: 20px;
+  margin: auto;
 }
 .under2>a {
   text-decoration: none;
@@ -288,6 +288,10 @@ footer{
   width: 450px;
   height: 337px;
 }
+.bilde>a>img{
+  width: 450px;
+  height: 337px;
+}
 .bilde:hover{
   opacity: 0.5;
 }
@@ -314,6 +318,24 @@ footer{
   margin-left: 10px;
 }
 .produktText>.ki>a:hover{
+  opacity: 0.5;
+}
+.produktText>.ki2>a{
+  color: black;
+  text-decoration: none;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: orange;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.produktText>.ki2{
+  margin-top: 30px;
+  margin-left: 70px;
+}
+.produktText>.ki2>a:hover{
   opacity: 0.5;
 }
 .kjøpgrid{
@@ -368,4 +390,24 @@ footer{
 .custom-select {
   position: relative;
   font-family: Arial;
+}
+.om-oss1{
+  display: grid;
+}
+.om-oss2{
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.utsolgt{
+  display: grid;
+}
+.utsolgt1{
+  margin: 100px;
+}
+.ustand{
+  display: grid;
+}
+.ustand1{
+  margin: 100px;
 }

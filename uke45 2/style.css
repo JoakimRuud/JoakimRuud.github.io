@@ -1,0 +1,413 @@
+body {
+  margin: 0;
+  background-color: #b3b3b3;
+  font-family: courier;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr;
+  background-color: #f2f2f2;
+  grid-gap: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header>.lenke {
+  align-self: center;
+  align: center;
+  border-right: 5px;
+  border-color: black;
+}
+
+header>.lenke>a {
+  color: #e7cf21;
+  text-decoration: none;
+  border-right: 5px;
+  border-color: black;
+}
+
+header>.lenke>a:hover {
+  color: grey;
+  text-decoration: underline;
+  transition: all ease-in-out 350ms;
+}
+
+
+#logo>a>img {
+  display: block;
+  margin: 1px;
+  width: 150px;
+}
+.dropned {
+  float: left;
+  overflow: hidden;
+}
+
+.dropned .dropknapp {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.dropned-content {
+  display: none;
+  position: absolute;
+  background-color: #e7cf21;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropned-content a {
+  float: none;
+  color: #33334d;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropned-content a:hover {
+  text-decoration: underline;
+  color: grey;
+  transition: all ease-in-out 350ms;
+}
+
+.dropned:hover .dropned-content {
+  display: block;
+}
+.dropknapp>a{
+  font-size: 20px;
+  text-decoration: none;
+  color: #e7cf21;
+}
+
+#over {
+  background-image: url(bilder/tennis-background-hd-1280x800-19160.jpg);
+  height: 867px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+#under {
+  margin-top: 200px;
+}
+
+#over>h1 {
+  text-align: center;
+  font-style: bold;
+  font-size: 40px;
+  color: #e7cf21;
+  margin-top: 350px;
+  margin-left: 300px;
+  margin-right: 300px;
+  border-bottom-style: double;
+  border-color: black;
+}
+
+#over>h2 {
+  margin-top: 360px;
+  font-size: 50px;
+}
+#ks{
+  font-size: 20px;
+  padding-bottom: 0;
+}
+
+.info {
+  text-decoration: none;
+  color: black;
+  font-style: bold;
+  font-size: 20px;
+  width: 20px;
+}
+
+.nyhet {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  margin-left: 50px;
+  margin-right: auto;
+  border-color: black;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+#bak {
+  background-color: #f2f2f2
+}
+
+#undersiden {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+}
+.nyheter-underside{
+  width:400px;
+  background-color: white;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.nyheter-underside>img{
+  width: 400px;
+}
+.produktText>.produktboks>a{
+  color: black;
+  text-decoration: none;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: orange;
+  font-size: 30px;
+  border-radius: 5px;
+}
+.produktText>.produktboks:hover{
+  opacity:0.5;
+}
+.produktText>.produktboks{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.produktText2{
+  margin-left: 5px;
+}
+TENNIS RACKERT UNDERSIDEN
+#background{
+    background-color: blue;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+#top{
+  margin-top: 80px;
+}
+
+#hei {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color: #f2f2f2;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-top: 5px;
+}
+
+#hei>.bilde>a>img {
+  width: 450px;
+}
+#kjøp {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+.ro{
+  margin-top: 100px;
+  text-align: center;
+}
+#ro{
+  margin-top: 100px;
+  text-align: center;
+}
+.ck{
+  text-align:center;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+.nj{
+  padding-left: 20px;
+}
+#kd{
+  width: 50px;
+  margin-left: 150px;
+}
+footer{
+  padding-left: 20px;
+  margin: auto;
+}
+.under2>a {
+  text-decoration: none;
+}
+
+.under2>a>img {
+  width: auto;
+  height: 300px;
+}
+
+.under2>a>h1 {
+  color: black;
+  text-align: center;
+}
+.under2 {
+  margin-top: 0px;
+}
+.nyhet2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  margin-left: 50px;
+  margin-right: auto;
+  border-color: black;
+}
+
+.nyheter2{
+  border-radius: 5px;
+  width: 400px;
+  height: 550px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: grid;
+}
+.nyheter2>.hj>p{
+  margin-left: 10px;
+}
+
+.nyheter2>.hj>img {
+  width: 400px;
+  height: 400px;
+  padding: 0;
+}
+.bilde{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 450px;
+  height: 337px;
+}
+.bilde>a>img{
+  width: 450px;
+  height: 337px;
+}
+.bilde:hover{
+  opacity: 0.5;
+}
+.produktText{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.produktText>.ki>a{
+  color: black;
+  text-decoration: none;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: orange;
+  font-size: 30px;
+  border-radius: 5px;
+}
+.produktText>.ki{
+  margin-top: 30px;
+  margin-left: 70px;
+}
+.produktText>.hj{
+  margin-left: 10px;
+}
+.produktText>.ki>a:hover{
+  opacity: 0.5;
+}
+.produktText>.ki2>a{
+  color: black;
+  text-decoration: none;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: orange;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.produktText>.ki2{
+  margin-top: 30px;
+  margin-left: 70px;
+}
+.produktText>.ki2>a:hover{
+  opacity: 0.5;
+}
+.kjøpgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 85px;
+  margin-right: 50px;
+}
+.grid1{
+  grid-row: span 2;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.grid1>img{
+  width: 340px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.grid2{
+  text-align: center;
+  margin: auto;
+}
+.grid2>h1{
+  text-align: center;
+}
+.grid3{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 10px;
+}
+.grid3>.text-informasjon{
+  text-align: center;
+  margin: auto;
+}
+.grid3>form{
+  margin: auto;
+  text-align: center;
+}
+.grid3>form>.grep-valg{
+  margin: auto;
+}
+.grid3>form>.strenget{
+  margin: auto;
+}
+.grid3>form>.handlekurv{
+  margin: auto;
+  margin-top: 20px;
+}
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+.om-oss1{
+  display: grid;
+}
+.om-oss2{
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.utsolgt{
+  display: grid;
+}
+.utsolgt1{
+  margin: 100px;
+}
+.ustand{
+  display: grid;
+}
+.ustand1{
+  margin: 100px;
+}
