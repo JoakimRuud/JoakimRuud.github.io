@@ -1,0 +1,70 @@
+{
+  "1":{
+    "svar":"Det er det som gir objektet en verdi"
+  },
+  "2":{
+    "a":{
+      "svar":"Brukernavn"
+    },
+    "b":{
+      "svar":"registreringsnummer"
+    },
+    "c":{
+      "svar":"Latinske navnet til planten"
+    },
+    "d":{
+      "svar":"mobilnummer"
+    },
+    "e":{
+      "svar":"distanse fra jorda"
+    }
+  },
+  "3":{
+    "svar":"Alle de ulike alternativene som man kan bruke til primærnøkkel"
+  },
+  "4":{
+    "svar":"Det er det som blir brukt for å unngå dobbelt lagring"
+  },
+  "5":{
+    "svar":"teknikker for å unngå dobbelt lagring"
+  },
+  "6":{
+    "spillere":{
+      "jokke":{
+        "highscore":99000,
+        "sistSpilt":"27 november",
+        "mail":"jokkemann@penis.stor"
+      },
+      "Gunnar":{
+        "highscore":98999,
+        "sistSpilt":"26 november",
+        "mail":"gunnarArne@hotmail.no"
+      },
+      "Thomas":{
+        "highscore":1,
+        "sistSpilt":"1 januar",
+        "mail":"ThomasFromTexas@schoolshooter.gun"
+      }
+    }
+  },
+  "7":{
+    "filmer":{
+      "sharknado":{
+        "filmID":"3",
+        "regissør":"Bob Stern",
+        "informasjon":"Universal Studions, 2004"
+      },
+      "StarWars":{
+        "filmID":"5",
+        "reggisør":"Steven Spielberg",
+        "informasjon":"Paramount, 2004"
+      },
+      "ET":{
+        "filmID":"8",
+        "reggisør":"Steve Spielberg",
+        "informasjon":"Paramount, 2009"
+      }
+    }
+  }
+
+}

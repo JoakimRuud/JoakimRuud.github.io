@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Senswear</title>
+
+  <!--Firebase database-->
+  <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC38KYOgF1zBgHODtq9Zf9mu2SCjkl30vM",
+      authDomain: "designerbutikk.firebaseapp.com",
+      databaseURL: "https://designerbutikk.firebaseio.com",
+      projectId: "designerbutikk",
+      storageBucket: "designerbutikk.appspot.com",
+      messagingSenderId: "993577672485"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <link rel="stylesheet" href="tilbakemeldinger.css">
+
+</head>
+
+<body>
+
+  <script type="text/javascript">
+    // Sign out from firebase.
+    firebase.auth().signOut().then(function() {
+      // Redirect to google sign out.
+      window.location.assign('index.html');
+    }).catch(function(error) {
+      // Error occurred.
+    });
+  </script>
+
+</body>
+
+</html>

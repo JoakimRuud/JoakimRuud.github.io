@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC38KYOgF1zBgHODtq9Zf9mu2SCjkl30vM",
+      authDomain: "designerbutikk.firebaseapp.com",
+      databaseURL: "https://designerbutikk.firebaseio.com",
+      projectId: "designerbutikk",
+      storageBucket: "designerbutikk.appspot.com",
+      messagingSenderId: "993577672485"
+    };
+    firebase.initializeApp(config);
+  </script>
+</head>
+
+<body>
+
+  <a href="index.html"> <img src="bilder/prosjektlogo.jpg" alt="Logo" id="logo_bilde"> </a>
+
+  <header>
+    <nav>
+      <div class="navBar">
+        <div>
+          <a href="index.html">Hjem</a>
+        </div>
+        <div>
+          <div class="dropned1">
+            <button class="dropknapp1"><a href="klaer.html">Klær</a></button>
+            <div class="dropned-content1">
+              <a href="moncler.html">Moncler</a>
+              <a href="stone.html">Stone Island</a>
+              <a href="burberry.html">Burberry</a>
+              <a href="saint.html">Saint Laurent</a>
+              <a href="offW.html">Off White</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a href="sko.html">Sko</a>
+        </div>
+        <div>
+          <a href="tilbakemelding.html">Tibakemelding</a>
+        </div>
+        <div>
+          <a href="#">Handlekurv</a>
+        </div>
+        <div>
+          <a href="login.html">Log in</a>
+        </div>
+        <div>
+          <a href="logut.html">Log ut</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="secValgtProdukt">
+
+    </div>
+  </main>
+
+  <footer>
+    <hr>
+    <section class="footer">
+      <div class="footerDiv1">
+        <a href="index.html"> <img src="bilder/prosjektlogo.jpg" alt="Logo" id="logo_bilde2"> </a>
+        <p>
+          Kontakt oss:
+          <br>
+          <section class="secMedia">
+            <div class="facebookDiv">
+              <a href="#"> <img src="bilder/facebook1.jpg" alt="facebook" id="facebook"> </a>
+            </div>
+            <div class="instagramDiv">
+              <a href="#"><img src="bilder/instagram1.jpg" alt="instagram" id="instagram"></a>
+            </div>
+            <div class="instagramDiv">
+              <a href="#"><img src="bilder/twitter1.jpg" alt="twitter" id="twitter"></a>
+            </div>
+          </section>
+        </p>
+      </div>
+      <div class="footerDiv2">
+        <p>Senswear</p>
+        <p>Trestokk veien 3B</p>
+        <p>1337 sandvika</p>
+        <p>TLF: 47984944</p>
+      </div>
+    </section>
+  </footer>
+
+  <script type="text/javascript">
+    //referanser til html elementer
+    const main = document.querySelector("main");
+    const secValgtProdukt = document.querySelector("#secValgtProdukt");
+
+    // koden som henter key fra forrige nettsiden
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    var id = url.searchParams.get("id");
+    var parent = url.searchParams.get("parent");
+    var parentParent = url.searchParams.get("parentParent")
+    var referanse = "Produkt/" + parentParent + "/" + parent + "/" + id;
+    console.log(referanse);
+
+    const db = firebase.database();
+    const valgtProdukt = db.ref(referanse);
+    console.log("id: " + id);
+
+
+    valgtProdukt.on("value", genererHTML);
+
+    function genererHTML(snapshot) {
+      //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
+      let produkt = snapshot.val();
+      let key = snapshot.key;
+
+      console.log(produkt);
+
+
+
+      secValgtProdukt.innerHTML +=`
+          <article>
+            <section class="produktInfoGrid">
+              <div>
+                <img src=${produkt.Bilde1}>
+              </div>
+              <div class="produktInfoGridInner">
+                <p class="produktMerke">${produkt.Merke}</p>
+                <h1 class="produktVare">${produkt.Navn}</h1>
+                <p class="produktPris">${produkt.Pris} NOK</p>
+                <button onclick="handlekurv.html" class="produktHandlekurv">Kjøp Nå <i class="fas fa-shopping-cart"></i> </button>
+                <p class="produktFarge">Farge: ${produkt.Farge}</p>
+              </div>
+            </section>
+            <div class="produktBildeGrid">
+              <div class="produktBildeDiv">
+                <img src=${produkt.Bilde2}>
+              </div>
+              <div class="produktBildeDiv">
+                <img src=${produkt.Bilde3}>
+              </div>
+              <div class="produktBildeDiv">
+                <img src=${produkt.Bilde4}>
+              </div>
+            </div>
+          </article>
+          `
+    }
+  </script>
+
+</body>
+
+</html>

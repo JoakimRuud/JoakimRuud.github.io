@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Prøv selv s.59</title>
+    <style media="screen">
+
+     input: focus{
+       width: 500px;
+     }
+
+     quote::after{
+       content: "»";
+     }
+
+     quote::before{
+       content: "«";
+     }
+
+     img{
+       display: block;
+       width: 300px;
+       margin-left: auto;
+       margin-right: auto;
+       transition: 0.5s;
+       margin-top: 200px;
+       margin-bottom: 50px;
+     }
+
+     img::after{
+       content: "dette bildet er beskyttet av åndeverkslåven";
+     }
+
+     #detførstebildet:hover{
+       transform: scale(1,1);
+       transform: scale(2.2);
+     }
+
+     #detandrebildet:active{
+       transform: translateY(100px);
+     }
+
+     td{
+       background-color: papayawhip;
+       padding:7px 14px;
+     }
+     table{
+       border-collapse: collapse;
+       border: solid olive 2px;
+       font-size: 30px;
+       padding:7px 14px;
+     }
+     tr{
+       border: solid olive 2px;
+     }
+     th{
+       text-align: left;
+     }
+    </style>
+  </head>
+  <body>
+
+
+    <quote>Veni, vidi, vici</quote>
+
+    <input type="text" name="" value="">
+    <input type="text" name="" value="">
+    <input type="text" name="" value="">
+
+    <img id="detførstebildet" src="thomas_tcm1399-199976.jpg">
+    <img id="detandrebildet" src="thomas_tcm1399-199976.jpg">
+
+    <table class="striped">
+      <thead>
+       <tr>
+         <th>år</th>
+         <th>låt</th>
+         <th>artist</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+         <td>2000</td>
+         <td>låt1</td>
+         <td>jokke</td>
+       </tr>
+       <tr>
+         <td>2774</td>
+         <td>låt2</td>
+         <td>artist</td>
+       </tr>
+       <tr>
+         <td>3733</td>
+         <td>låt3</td>
+         <td>mann</td>
+       </tr>
+     </tbody>
+    </table>
+  </body>
+</html>
