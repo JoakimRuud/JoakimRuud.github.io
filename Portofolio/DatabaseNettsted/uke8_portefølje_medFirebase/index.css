@@ -28,7 +28,7 @@ main article{
 main article p {
   font-weight: bold;
   transform: translateX(-200%);
-  transition: 20s;
+  transition: 1s;
 }
 main article a{
   background-color: darkorange;
@@ -37,7 +37,7 @@ main article a{
   text-decoration: none;
   color: white;
   transform: translateX(200%);
-  transition: 20s;
+  transition: 1s;
 }
 main>article:hover>p{
   transform: translateX(0);
